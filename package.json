@@ -1,0 +1,35 @@
+{
+  "name": "hermes",
+  "version": "0.0.1",
+  "engines": [
+    "node = 0.8.x"
+  ],
+  "description": "A messenger for your cozy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bnjbvr/hermes"
+  },
+  "main": "server.coffee",
+  "dependencies": {
+    "americano": "0.3.6",
+    "americano-cozy": "0.2.5",
+    "request-json": "0.4.10"
+  },
+  "devDependencies": {
+    "should": "4.0.1",
+    "mocha": "1.20.1",
+    "cozy-fixtures": "1.1.1",
+    "coffeelint": "1.5.1"
+  },
+  "scripts": {
+    "test": "cake tests",
+    "start": "coffee server.coffee"
+  },
+  "cozy-permissions": {
+      "send mail to user": {
+          "description": "Send emails to the user"
+      }
+  },
+  "cozy-displayName": "Hermes"
+}
